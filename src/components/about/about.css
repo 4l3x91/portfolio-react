@@ -31,7 +31,7 @@
 }
 
 .about__card {
-    background: var(--color-bg-variant);
+    background: var(--color-primary-variant);
     padding: 2rem;
     text-align: center;
     border-radius: 1rem;
@@ -41,25 +41,21 @@
 }
 
 .about__card:hover {
-    background: var(--color-light);
-    color: var(--color-bg);
+    background: transparent;
     border-color: var(--color-light);
     cursor: default;
     transition: var(--transition);
 }
 
-.about__card:hover small {
-    color: var(--color-bg);
-}
-
 .about__icon {
-    color: var(--color-primary);
+    color: var(--color-bg);
     font-size: 1.4rem;
     margin-bottom: 1rem;
 }
 
 .about__card:hover .about__icon {
-    color: var(--color-bg);
+    color: var(--color-light);
+    transition: var(--transition);
 }
 
 .about__card small {
@@ -100,6 +96,9 @@
     .about__cards {
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
+    }
+    .about__card {
+        padding: .6rem;
     }
     .about__content {
         text-align: center;

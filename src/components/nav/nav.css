@@ -1,16 +1,15 @@
 nav {
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, .25);
     width: max-content;
-    display: block;
-    padding: 0.7rem 1.7rem;
+    padding: 0.5rem 1.2rem;
     z-index: 2;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 2rem;
+    bottom: .75rem;
     display: flex;
     gap: 0.8rem;
-    border-radius: 3rem;
+    border-radius: 1rem;
     backdrop-filter: blur(2px);
     transition: 1s ease all;
 }
@@ -25,6 +24,14 @@ nav a {
     
 }
 
+nav:hover {
+    background: rgba(0, 0, 0, .7);
+    gap: 1rem;
+    padding: 0.5rem 1.3rem;
+    bottom: 1rem;
+
+}
+
 nav a:hover {
     color: white;
     transition: var(--transition);
@@ -32,7 +39,49 @@ nav a:hover {
 }
 
 nav a.active {
-    background: rgba(0, 0, 0, .6);
-    border-radius: 50%;
     color: white;
+    transition: var(--transition);
+}
+
+/* Media queries */
+
+/* Medium devices */
+
+@media screen and (max-width: 1024px) {    
+    /* nav {
+        display: block;
+        top: 5%;
+        height: max-content;
+        left: 5%;
+
+        background: rgba(0, 0, 0, 0.5);
+        padding: 1px;
+    }
+    nav a {
+        text-shadow: 0 0 10px rgb(194, 35, 7);
+        padding: 10px 8px 10px 8px;
+    } */
+}
+
+/* Small devices */
+
+@media screen and (max-width: 600px) {    
+    nav {
+        display: block;
+        top: 33%;
+        height: max-content;
+        left: 6.5%;
+
+        background: rgba(0, 0, 0, 0.5);
+        padding: 1px;
+    }
+    nav a {
+        text-shadow: 0 0 10px rgb(194, 35, 7);
+        padding: 10px 8px 10px 8px;
+    }
+
+    nav:hover {
+        padding: inherit;
+        background: rgba(0, 0, 0, 0.5);
+    }
 }
