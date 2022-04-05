@@ -7,6 +7,7 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    background-clip: padding-box !important;
 }
 
 :root {
@@ -34,10 +35,14 @@ html {
 
 body {
     font-family: "Poppins", sans-serif;
-    background: var(--color-bg);
+    /* background: var(--color-bg); */
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url('../src/assets/bg-texture.png');
+    /* background-image: url('../src/assets/bg-texture.png'); */
+    background: rgb(31,22,46);
+    background: -moz-linear-gradient(180deg, rgba(31,22,46,1) 0%, rgba(70,54,101,1) 45%, rgba(70,54,101,1) 55%, rgba(31,22,46,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(31,22,46,1) 0%, rgba(70,54,101,1) 45%, rgba(70,54,101,1) 55%, rgba(31,22,46,1) 100%);
+    background: linear-gradient(180deg, rgba(31,22,46,1) 0%, rgba(70,54,101,1) 45%, rgba(70,54,101,1) 55%, rgba(31,22,46,1) 100%);
     transition: var(--transition);
 }
 
@@ -62,8 +67,8 @@ h1 {
 }
 
 section {
-    padding-top: 8rem;
-    height: 100vh;
+    padding-top: 4rem;
+    min-height: 100vh;
 }
 
 section > h2, section > h5 {
@@ -127,7 +132,7 @@ img {
     }
     
     section {
-        padding-top: 0;
+        padding-top: 2rem;
         height: auto;
         min-height: 100vh;
     }
