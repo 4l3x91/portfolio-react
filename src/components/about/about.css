@@ -31,18 +31,16 @@
 }
 
 .about__card {
-    background: var(--color-primary-variant);
+    background: linear-gradient(180deg, rgb(63, 49, 87) 0%, rgb(93, 75, 128) 100%);
     padding: 2rem;
     text-align: center;
     border-radius: 1rem;
-    border: 1px solid transparent;
     transition: var(--transition);
-    
+    border: 1px solid transparent;
 }
 
 .about__card:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
+    border: 1px solid var(--color-primary-variant);
     cursor: default;
     transition: var(--transition);
 }
@@ -94,7 +92,7 @@
         margin: 0 auto 3rem;
     }
     .about__cards {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
     .about__card {
