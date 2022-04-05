@@ -1,0 +1,111 @@
+.testimonials__container {
+    width: 40% !important;
+}
+
+.client__avatar {
+    width: 9rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 0.4rem solid var(--color-primary-variant);
+}
+
+.testimonial {
+        text-align: center;
+        padding-top: 3rem;
+        padding-bottom: 14rem;
+        border-radius: 2rem;
+        -webkit-user-select: none;
+        user-select: none;
+        background: linear-gradient(180deg, rgb(63, 49, 87) 0%, rgb(93, 75, 128) 100%);
+}
+
+.client__review {
+    color: var(--color-light);
+    font-weight: 300;
+    display: block;
+    width: 80%;
+    margin: 0.8rem auto 0;
+}
+
+/* Swiper section */
+.swiper {
+    padding-bottom: 4rem !important;
+    width: 45%;
+}
+
+.swiper-pagination-bullet {
+    background: var(--color-primary-variant) !important;
+    opacity: .5 !important;
+}
+
+.swiper-pagination-bullet {
+    width: 30px !important;
+    height: 6px !important;
+    border-radius: 2px !important;
+    transition: var(--transition);
+  }
+
+.swiper-pagination-bullet-active {
+      background: var(--color-white) !important;
+      opacity: 1 !important;
+  }
+
+.swiper-slide-active .testimonial {
+    border: 1px solid var(--color-primary-variant);
+}
+
+.swiper-3d .swiper-slide-shadow {
+    background: rgba(0,0,0,.5) !important;
+    border-radius: 2rem !important;
+  }
+ 
+/* Media queries */
+
+/* Medium devices */
+
+@media screen and (max-width: 1640px) {
+    .container.testimonials__container {
+        width: 50% !important;
+    }
+
+    .swiper {
+        padding-bottom: 4rem !important;
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container.testimonials__container {
+        width: 50% !important;
+    }
+    
+    .swiper {
+        width: var(--container-width-md) !important;
+    }
+
+    .swiper-pagination-bullet {
+        display: none !important;
+    }
+}
+
+/* Small devices */
+
+@media screen and (max-width: 600px) {
+    .container.testimonials__container {
+        width: var(--container-width-sm) !important;
+    }
+    
+    .swiper {
+        width: var(--container-width-sm) !important;
+    }
+    
+    .testimonial {
+        /* padding: 4rem !important; */
+    }
+    
+    .swiper-pagination-bullet {
+        display: none !important;
+    }
+}
