@@ -5,7 +5,7 @@
 }
 
 .service {
-    background: var(--color-primary-variant);
+    background: linear-gradient(180deg, rgb(63, 49, 87) 0%, rgb(93, 75, 128) 100%);
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
@@ -13,7 +13,6 @@
 }
 
 .service:hover {
-    background: transparent;
     border-color: var(--color-primary-variant);
     cursor: default;
 }
@@ -28,7 +27,6 @@
     padding: 2rem;
     border-radius: 2rem 2rem 0rem 0rem;
     color: var(--color-bg);
-    box-shadow: 0rem 0rem 0rem .5rem rgba(0, 0, 0, 0.05);
     transition: var(--transition);
 }
 
