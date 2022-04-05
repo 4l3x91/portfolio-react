@@ -1,0 +1,64 @@
+.container.contact__container {
+    width: 58%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+}
+
+.contact__options {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact__option {
+    background: linear-gradient(180deg, rgb(63, 49, 87) 0%, rgb(93, 75, 128) 100%);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    transition: var(--transition);
+    margin: 1px;
+    border: 1px solid transparent;
+    color: var(--color-bg);
+    transition: var(--transition);
+}
+
+.contact__option:hover {
+    border: 1px solid var(--color-primary-variant);
+    color: white;
+    transition: var(--transition);
+}
+
+.contact__option-icon {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    color: var(--color-bg);
+    transition: var(--transition);
+}
+.contact__option:hover .contact__option-icon {
+    color: white;
+}
+
+.contact__option a {
+    margin-top: .7rem;
+    display: inline-block;
+    font-size: 0.8rem;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    background: transparent;
+    border: 1px solid var(--color-primary-variant);
+    color: white;
+    font-family:'Poppins', sans-serif;
+    resize: none;
+}
