@@ -7,20 +7,20 @@ import ME from '../../assets/me.png'
 const Header = () => {
   return (
     <section id='home'>
-    <header>
-      
       <div className="container header__container">
-        <h5>Hello I'm</h5>
-        <h1>Alexander Auermaa</h1>
-        <h5 className="text-light">Nonstack developer</h5>
-        <CTA />
-        <HeaderSocials />
+      <a href="#about" className='scroll__down'>— Scroll Down —</a>
         <div className="me">
           <img src={ME} alt="me" />
         </div>
-        <a href="#about" className='scroll__down'>— Scroll Down —</a>
+        <HeaderSocials />
+        <div className='header__content'>
+        <h5>Hello, I'm</h5>
+        <h1>Alexander Auermaa</h1>
+        </div>
+        <h5 className="text-light">Nonstack developer</h5>
+        <CTA />
       </div>
-    </header>
+    
       </section>
   )
 }
